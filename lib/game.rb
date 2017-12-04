@@ -73,6 +73,7 @@ def turn
   input = current_player.move(board)
   if board.valid_move?(input)
     board.update(input, current_player)
+    @board.display
   elsif input == "quit"
     exit
   else

@@ -1,3 +1,5 @@
+require './lib/player.rb'
+
 class Game
   include Players
   attr_accessor :board, :player_1, :player_2, :token
@@ -84,7 +86,6 @@ def play
   end
   if won?
     puts "Congratulations #{winner}!"
-    "won"
   elsif draw?
     puts "Cat's Game!"
   end

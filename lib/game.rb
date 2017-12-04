@@ -1,6 +1,7 @@
 require './lib/player.rb'
 
 class Game
+   Players::Human
   include Players
   attr_accessor :board, :player_1, :player_2, :token
 

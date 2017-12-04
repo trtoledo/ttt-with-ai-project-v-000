@@ -15,7 +15,7 @@ class TicTacToeCLI
     when "0"
       @player_1 = Players::Computer.new('X')
       @player_2 = Players::Computer.new('O')
-  
+
     when "1"
       @player_1 = Players::Human.new('X')
       @player_2 = Players::Computer.new('O')
